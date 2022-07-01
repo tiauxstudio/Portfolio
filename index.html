@@ -1,7 +1,236 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr" data-color-mode="light" class="overflow-hidden">
+
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Title -->
+	<title>TIA UX Studio</title>
+
+	<!-- #region / Required meta tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+	<meta itemprop="name" content="TIA UX Studio" />
+	<meta itemprop="description"
+		content="Realizing the unimagined. Digital ecosystems, platforms, products through innovation and design." />
+	<meta itemprop="image"
+		content="https://github.com/tiauxstudio/Portfolio/blob/main/images/meta-og-image.png?raw=true" />
+
+	<meta property="og:title" content="TIA UX Studio" />
+	<meta property="og:description"
+		content="Realizing the unimagined. Digital ecosystems, platforms, products through innovation and design." />
+	<meta property="og:image"
+		content="https://github.com/tiauxstudio/Portfolio/blob/main/images/meta-og-image.png?raw=true" />
+	<meta property="og:site_name" content="TIA UX Studio" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="" />
+
+	<meta name="twitter:image:src"
+		content="https://github.com/tiauxstudio/Portfolio/blob/main/images/meta-og-image.png?raw=true" />
+	<meta name="twitter:site" content="" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="TIA UX Studio" />
+	<meta name="twitter:description"
+		content="Realizing the unimagined. Digital ecosystems, platforms, products through innovation and design." />
+
+	<!-- #endregion -->
+
+	<!-- #region / Favicons -->
+	<link rel="apple-touch-icon" sizes="180x180"
+		href="https://github.com/tiauxstudio/Portfolio/blob/main/images/favicons/apple-touch-icon.png?raw=true" />
+	<link rel="icon" type="image/png" sizes="32x32"
+		href="https://github.com/tiauxstudio/Portfolio/blob/main/images/favicons/favicon-32x32.png?raw=true" />
+	<link rel="icon" type="image/png" sizes="192x192"
+		href="https://github.com/tiauxstudio/Portfolio/blob/main/images/favicons/android-chrome-192x192.png?raw=true" />
+	<link rel="icon" type="image/png" sizes="16x16"
+		href="https://github.com/tiauxstudio/Portfolio/blob/main/images/favicons/favicon-16x16.png?raw=true" />
+	<link rel="manifest"
+		href="https://github.com/tiauxstudio/Portfolio/blob/main/images/favicons/site.webmanifest?raw=true" />
+	<link rel="mask-icon"
+		href="https://github.com/tiauxstudio/Portfolio/blob/main/images/favicons/safari-pinned-tab.svg?raw=true"
+		color="#181818" />
+	<link rel="shortcut icon"
+		href="https://github.com/tiauxstudio/Portfolio/blob/main/images/favicons/favicon.ico?raw=true" />
+	<meta name="msapplication-TileColor" content="#082478" />
+	<meta name="msapplication-TileImage"
+		content="https://github.com/tiauxstudio/Portfolio/blob/main/images/favicons/mstile-144x144.png?raw=true" />
+	<meta name="msapplication-config"
+		content="https://github.com/tiauxstudio/Portfolio/blob/main/images/favicons/browserconfig.xml?raw=true" />
+	<meta name="theme-color" content="#082478" />
+	<!-- #endregion -->
+
+	<!-- #region / Plugins -->
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- Roboto Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+		rel="stylesheet">
+	<!-- Fontawesome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- #endregion -->
+
+	<!-- Custom Style -->
+	<style>
+		html {
+			box-sizing: border-box;
+			background: black;
+			font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "PingFang TC", "Heiti TC", 微軟正黑體, sans-serif;
+			font-size: 16px;
+			-webkit-font-smoothing: antialiased;
+			scroll-behavior: smooth;
+		}
+
+		body>.container {
+			display: grid;
+			justify-content: center;
+			align-content: center;
+			height: 100vh;
+			position: relative;
+			font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "PingFang TC", "Heiti TC", 微軟正黑體, sans-serif;
+		}
+
+		body>.container>.background {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			justify-content: center;
+			display: flex;
+			pointer-events: none;
+		}
+
+		body>.container>.background img {
+			width: 120%;
+			margin: auto;
+		}
+
+		body>.container .content {
+			font-size: 20px;
+			line-height: 120%;
+			margin: 36px;
+		}
+
+		body>.container .content img {
+			width: 180px;
+			margin: auto auto 50px;
+		}
+
+		body>.container .content h1 {
+			font-size: 64px;
+			margin-bottom: 36px;
+			font-weight: 200;
+		}
+
+		body>.container .content p {
+			margin-bottom: 0px;
+		}
+
+		.social-icons {
+			margin: 50px auto;
+			padding: 0px;
+			text-align: center;
+			width: 100%;
+		}
+
+		.social-icons li {
+			Display: inline-block;
+			margin: 10px;
+		}
+
+		.social-icons li a {
+			color: #000;
+			background: transparent;
+			display: inline-block;
+			font-size: 20px;
+			height: 50px;
+			width: 50px;
+			text-decoration: none;
+			position: relative;
+			pointer-events: auto;
+			-webkit-border-radius: 25px;
+			-moz-border-radius: 25px;
+			border-radius: 25px;
+			border: 2px solid #e7e7e7;
+			transition: all 0.8s ease;
+		}
+
+		.social-icons li a i {
+			line-height: 50px;
+		}
+
+		.social-icons li a:hover {
+			color: #082478;
+			-webkit-border-radius: 25px;
+			-moz-border-radius: 25px;
+			border-radius: 25px;
+			border: 3px solid #082478;
+		}
+	</style>
+</head>
+
 <body>
-TEST
+	<div class="container">
+		<div class="background">
+			<img src="https://github.com/tiauxstudio/Portfolio/blob/main/images/bg.png?raw=true"
+				alt="TIA UX Studio background">
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-10">
+				<div class="content d-flex flex-column justify-content-center">
+					<!-- Logo -->
+					<img src="https://github.com/tiauxstudio/Portfolio/blob/main/images/logo.png?raw=true"
+						alt="TIA UX Studio logo">
+
+					<!-- Content -->
+					<div class="text-center">
+						<h1>we've got something special for you.</h1>
+						<p>And we can't wait for you to see it.</p>
+						<p>Please check back soon.</p>
+					</div>
+
+					<!-- Social Media -->
+					<ul class="social-icons">
+						<li>
+							<a href="https://www.facebook.com/tiauxstudio">
+								<i class="fa fa-facebook"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/tiauxstudio">
+								<i class="fa fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/company/tiauxstudio/">
+								<i class="fa fa-linkedin"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.behance.net/tiauxstudio">
+								<i class="fa fa-behance"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://dribbble.com/tiauxstudio">
+								<i class="fa fa-dribbble"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/tiauxstudio/">
+								<i class="fa fa-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/tiauxstudio">
+								<i class="fa fa-github"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
-
