@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" data-color-mode="light" class="overflow-hidden">
+<html lang="en" dir="ltr">
 
 <head>
 	<meta charset="utf-8" />
@@ -74,22 +74,70 @@
 
 	<!-- Custom Style -->
 	<style>
+		/* STYLING SCROLLBAR */
+		::-webkit-scrollbar {
+			width: 6px;
+			height: 6px;
+		}
+
+		::-webkit-scrollbar-track {
+			border-radius: 10px;
+			background: rgba(0, 0, 0, 0.1);
+		}
+
+		::-webkit-scrollbar-thumb {
+			border-radius: 10px;
+			background: rgba(0, 0, 0, 0.2);
+		}
+
+		::-webkit-scrollbar-thumb:hover {
+			background: rgba(0, 0, 0, 0.4);
+		}
+
+		::-webkit-scrollbar-thumb:active {
+			background: rgba(0, 0, 0, 0.9);
+		}
+
 		html {
+			position: static !important;
+			top: 0 !important;
 			box-sizing: border-box;
-			background: black;
-			font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "PingFang TC", "Heiti TC", 微軟正黑體, sans-serif;
-			font-size: 16px;
+		}
+
+		html {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+		}
+
+		body {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			font-family: "Roboto", sans-serif;
+			font-weight: 300;
+			line-height: 22px;
+			font-size: 18px;
+			line-height: 1.5;
+			background: #fff;
 			-webkit-font-smoothing: antialiased;
-			scroll-behavior: smooth;
+			text-rendering: optimizeSpeed;
+			font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "PingFang TC", "Heiti TC", 微軟正黑體, sans-serif;
+		}
+
+		html,
+		body {
+			max-width: 100%;
+			overflow-x: hidden;
+			-webkit-tap-highlight-color: transparent;
 		}
 
 		body>.container {
-			display: grid;
-			justify-content: center;
-			align-content: center;
-			height: 100vh;
 			position: relative;
-			font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "PingFang TC", "Heiti TC", 微軟正黑體, sans-serif;
+			min-height: 100%;
+			overflow: hidden;
 		}
 
 		body>.container>.background {
@@ -109,7 +157,7 @@
 		body>.container .content {
 			font-size: 20px;
 			line-height: 120%;
-			margin: 36px;
+			margin: 64px 36px;
 		}
 
 		body>.container .content img {
@@ -123,12 +171,24 @@
 			font-weight: 200;
 		}
 
+		@media (max-width: 767.98px) {
+			body>.container .content h1 {
+				font-size: 44px;
+			}
+		}
+
 		body>.container .content p {
 			margin-bottom: 0px;
 		}
 
+		@media (max-width: 767.98px) {
+			body>.container .content p {
+				font-size: 18px;
+			}
+		}
+
 		.social-icons {
-			margin: 50px auto;
+			margin: 50px auto 0;
 			padding: 0px;
 			text-align: center;
 			width: 100%;
@@ -137,6 +197,12 @@
 		.social-icons li {
 			Display: inline-block;
 			margin: 10px;
+		}
+
+		@media (max-width: 767.98px) {
+			.social-icons li {
+				margin: 4px;
+			}
 		}
 
 		.social-icons li a {
@@ -171,7 +237,7 @@
 </head>
 
 <body>
-	<div class="container">
+	<div class="container d-flex flex-column justify-content-center">
 		<div class="background">
 			<img src="https://github.com/tiauxstudio/Portfolio/blob/main/images/bg.png?raw=true"
 				alt="TIA UX Studio background">
